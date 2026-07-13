@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+canvas {
+  display: block;
+  background: radial-gradient(circle at bottom, #111 30%, #000);
+}
+
+.control-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+  max-width: 300px;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.control-panel h1 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #ff6a00;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 0.9em;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.toggles {
+  margin: 15px 0;
+}
+
+.toggles label {
+  display: block;
+  font-size: 0.85em;
+  margin-bottom: 6px;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.presets button, #fullscreenBtn {
+  flex: 1 1 45%;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.presets button:hover,
+#fullscreenBtn:hover {
+  background: #ff8800;
+}
